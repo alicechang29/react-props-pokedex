@@ -1,5 +1,6 @@
 import './Pokecard.css';
 
+/**Given a pokemon card, creates div element for the card */
 function Pokecard({ pkCard }) {
     const { id, name, type, base_experience } = pkCard;
 

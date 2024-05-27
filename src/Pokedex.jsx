@@ -1,6 +1,7 @@
 import Pokecard from './Pokecard.jsx';
 import './Pokedex.css';
 
+/**Given a list of pokemon cards, creates div element rows */
 function Pokedex({pokemonCards}){
     return(
         <div className="Pokedex">
