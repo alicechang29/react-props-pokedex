@@ -19,7 +19,6 @@ function Pokecard({ pkCard }) { //FIXME: instead of passing in pkCard, pass in t
                 <br/>
                 EXP: {base_experience}
             </p>
-
         </div>
     );
 }

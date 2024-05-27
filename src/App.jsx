@@ -1,18 +1,9 @@
 import './App.css';
-import Pokedex from './Pokedex.jsx';
+import Pokegame from './Pokegame.jsx';
 
 //FIXME: move this into Pokedex and pass in Pokedex as default prop - this way people can pass in their own decks
 // In react, put data exactly where you want it to be. App doesn't care what the cards are
-const pkCards = [
-  { id: 4, name: 'Charmander', type: 'fire', base_experience: 62 },
-  { id: 7, name: 'Squirtle', type: 'water', base_experience: 63 },
-  { id: 11, name: 'Metapod', type: 'bug', base_experience: 72 },
-  { id: 12, name: 'Butterfree', type: 'flying', base_experience: 178 },
-  { id: 25, name: 'Pikachu', type: 'electric', base_experience: 112 },
-  { id: 39, name: 'Jigglypuff', type: 'normal', base_experience: 95 },
-  { id: 94, name: 'Gengar', type: 'poison', base_experience: 225 },
-  { id: 133, name: 'Eevee', type: 'normal', base_experience: 65 }
-]
+
 
 /**App for Pokemon cards
  * Given list of pokemon, outputs cards.
@@ -20,7 +11,7 @@ const pkCards = [
 function App() {
   return (
     <div className="App">
-      <Pokedex pokemonCards={pkCards} />
+      <Pokegame />
     </div>
   );
 };
