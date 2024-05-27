@@ -1,7 +1,8 @@
 import './App.css';
 import Pokedex from './Pokedex.jsx';
 
-
+//FIXME: move this into Pokedex and pass in Pokedex as default prop - this way people can pass in their own decks
+// In react, put data exactly where you want it to be. App doesn't care what the cards are
 const pkCards = [
   { id: 4, name: 'Charmander', type: 'fire', base_experience: 62 },
   { id: 7, name: 'Squirtle', type: 'water', base_experience: 63 },

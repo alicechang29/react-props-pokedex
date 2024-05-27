@@ -1,8 +1,10 @@
 import Pokecard from './Pokecard.jsx';
 import './Pokedex.css';
 
-/**Given a list of pokemon cards, creates div element rows */
-function Pokedex({pokemonCards}){
+/**Given a list of pokemon cards, rendering Pokecard element
+ * App > Pokedex > Pokecard
+*/
+function Pokedex({ pokemonCards }){ //FIXME: rename to Pokemon
     return(
         <div className="Pokedex">
             <h1 className="Pokedex-header">Pokedex</h1>
