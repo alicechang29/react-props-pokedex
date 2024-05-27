@@ -1,4 +1,5 @@
 import './App.css';
+import Pokedex from './Pokedex.jsx';
 
 
 const pkCards = [
@@ -12,6 +13,9 @@ const pkCards = [
   { id: 133, name: 'Eevee', type: 'normal', base_experience: 65 }
 ]
 
+/**App for Pokemon cards
+ * Given list of pokemon, outputs cards.
+ */
 function App() {
   return (
     <div className="App">

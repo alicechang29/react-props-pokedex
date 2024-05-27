@@ -1,15 +1,23 @@
 import './Pokecard.css';
 
-const IMAGE_URL = "https://raw.githubusercontent.com/" +
-    `PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+function Pokecard({ pkCard }) {
+    const { id, name, type, base_experience } = pkCard;
 
-function Pokecard({ id, name, type, base_experience }) {
+    const imageURL =
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
+    + id
+    + ".png";
+
     return (
         <div className="Pokecard">
             <h2 className="Pokecard-header">{name}</h2>
-            <img src={IMAGE_URL} />
-            <p>Type: {type}</p>
-            <p>EXP: {base_experience}</p>
+            <img src={imageURL} />
+            <p className="Pokecard-info">
+                Type: {type}
+                <br/>
+                EXP: {base_experience}
+            </p>
+
         </div>
     );
 }
