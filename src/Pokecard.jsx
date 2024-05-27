@@ -1,17 +1,17 @@
+import './Pokecard.css';
 
-function PokeCard(){
-    <div className="PokeCard">
-       <div className="container">
-           <div className="row">
+const IMAGE_URL = "https://raw.githubusercontent.com/" +
+    `PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
-               <div className="col-3">
+function Pokecard({ id, name, type, base_experience }) {
+    return (
+        <div className="Pokecard">
+            <h2 className="Pokecard-header">{name}</h2>
+            <img src={IMAGE_URL} />
+            <p>Type: {type}</p>
+            <p>EXP: {base_experience}</p>
+        </div>
+    );
+}
 
-               </div>
-
-           </div>
-       </div>
-
-    </div>
-   }
-
-   export default Pokedex;
+export default Pokecard;
