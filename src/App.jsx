@@ -21,14 +21,8 @@ function App() {
     <div className="App">
       <main>
         <img src={logo} className="App-logo" alt="Rithm" />
-        <h1>Rithm React Starter</h1>
-        <p>
-          <button
-              className="btn btn-primary"
-              onClick={incrCount}>
-            Clicked: {count}
-          </button>
-        </p>
+        <h1>Pokedex</h1>
+        {/* insert Pokedex component here */}
         <p>
           Edit <code>src/App.jsx</code>
         </p>
