@@ -12,6 +12,7 @@ const pkCards = shuffle([
   { id: 133, name: 'Eevee', type: 'normal', base_experience: 65 }
 ]);
 
+//TODO: docstring
 function Pokegame({ pokemon = pkCards }) {
   const deck1 = pokemon.slice(0, 4);
   const deck2 = pokemon.slice(4);
@@ -32,3 +33,8 @@ function calculateExp(deck) {
 }
 
 export default Pokegame;
+
+/*
+1 - add in the winner message within pokegame
+2 - can create a pokeCardHand component - which tells you if youre the winner and gives pokeDecks
+*/
