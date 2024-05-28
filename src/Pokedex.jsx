@@ -5,7 +5,7 @@ import './Pokedex.css';
  * App > Pokedex > Pokecard
 */
 function Pokedex({ pokemon, winner }) {
-    let message;
+    let message; //make this a ternary
     if (winner) {
         message = "THIS HAND WINS!";
     }
