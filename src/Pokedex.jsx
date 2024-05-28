@@ -4,7 +4,11 @@ import './Pokedex.css';
 /**Given a list of pokemon cards, rendering Pokecard element
  * App > Pokedex > Pokecard
 */
-function Pokedex({ pokemon }) { //FIXME: rename to Pokemon
+function Pokedex({ pokemon, winner }) {
+    let message;
+    if (winner) {
+        message = "THIS HAND WINS!";
+    }
     return (
         <div className="Pokedex">
             <h1 className="Pokedex-header">Pokedex</h1>
@@ -17,7 +21,9 @@ function Pokedex({ pokemon }) { //FIXME: rename to Pokemon
                             </div>
                     )}
                 </div>
+                <div className="Pokedex-winner">{message}</div>
             </div>
+
         </div>
     );
 }

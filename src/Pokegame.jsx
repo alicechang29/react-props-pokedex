@@ -13,12 +13,22 @@ const pkCards = shuffle([
 ]);
 
 function Pokegame({ pokemon = pkCards }) {
+  const deck1 = pokemon.slice(0, 4);
+  const deck2 = pokemon.slice(4);
+
+  const p1IsWinner = calculateExp(deck1) > calculateExp(deck2);
+
   return (
     <div className="Pokegame">
-      <Pokedex pokemon={pokemon.slice(0, 4)} />
-      <Pokedex pokemon={pokemon.slice(4)} />
+      <Pokedex pokemon={deck1} winner={p1IsWinner} />
+      <Pokedex pokemon={deck2} winner={!p1IsWinner} />
     </div>
   );
+}
+
+function calculateExp(deck) {
+
+  return deck.reduce((acc, pk) => acc + pk.base_experience, 0);
 }
 
 export default Pokegame;
